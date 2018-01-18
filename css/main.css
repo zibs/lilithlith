@@ -224,16 +224,33 @@ h4.glossary {
 .caslon {
     font-family: 'kings-caslon-display', serif !important;
 }
+
+#flyer-1 {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background-color: #fef9f1;
+}
 /* // Small devices (landscape phones, 576px and up) */
 
 @media only screen and (min-width: 320px) {
     body {
         /* background-color: red; */
     }
+    #flyer-1 {
+        display: initial;
+        position: relative;
+        top: 0px;
+    }
 }
 @media only screen and (min-width: 375px) {
     body {
         /* background-color: pink; */
+    }
+    #flyer-1 {
+        display: initial;
+        position: relative;
+        top: 0px;
     }
 }
 
@@ -245,6 +262,11 @@ h4.glossary {
         position: relative;
         bottom: 0px;
         right: -15px;
+    }
+    #flyer-1 {
+        display: initial;
+        position: relative;
+        top: 0px;
     }
 }
 
@@ -269,6 +291,13 @@ h4.glossary {
     }
     .home {
         margin-left: 15px;
+    }
+
+    #flyer-1 {
+        display: none;
+        position: absolute;
+        top: 100px;
+        background-color: #fef9f1;
     }
 }
 
