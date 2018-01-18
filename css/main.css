@@ -183,10 +183,34 @@ p.small-btm {
     text-indent: 25px;
 }
 .x2-indent {
-   text-indent: 100px;
+    text-indent: 100px;
 }
 .x3-indent {
-       text-indent: 150px;
+    text-indent: 150px;
+}
+.larger {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+.up {
+    position: relative;
+    bottom: 2px;
+    font-size: 22px;
+    font-family: 'kings-caslon-display', serif;
+}
+.font-plus {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+.down {
+    position: relative;
+    top: 2px;
+    font-size: 22px;
+    font-family: 'kings-caslon-display', serif;
+}
+.x1-ls {
+    letter-spacing: 5px;
+    font-family: 'kings-caslon-display', serif;
 }
 
 h4.glossary {
