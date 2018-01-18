@@ -101,6 +101,21 @@ body {
     background-color: #fef9f1;
     color: #ad5527;
     padding-top: 35px;
+    font-family: 'kings-caslon-display';
+}
+ul {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+h6 {
+    margin-bottom: 0px;
+}
+li {
+    font-size: 14px;
+}
+
+.home {
+    margin-left: 15px;
 }
 .container-fluid {
     position: relative;
@@ -113,23 +128,26 @@ body {
 .padding-r-xs {
     padding-right: 25px;
 }
+.break {
+    word-wrap: break-word;
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 
 @media only screen and (min-width: 320px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 }
 @media only screen and (min-width: 375px) {
     body {
-        background-color: pink;
+        /* background-color: pink; */
     }
 }
 
 @media only screen and (min-width: 414px) {
     body {
-        background-color: orange;
+        /* background-color: orange; */
     }
     .flyer-one-img {
         position: relative;
@@ -140,19 +158,25 @@ body {
 
 @media (min-width: 576px) {
     body {
-        background-color: blue;
+        /* background-color: blue; */
+    }
+    .home {
+        margin-left: 0px;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background-color: gold;
+        /* background-color: gold; */
     }
     .flyer-one-img {
         position: relative;
         bottom: 100px;
         right: -15px;
+    }
+    .home {
+        margin-left: 15px;
     }
 }
 
