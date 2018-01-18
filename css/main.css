@@ -235,7 +235,6 @@ h4.glossary {
 
 @media only screen and (min-width: 320px) {
     body {
-        /* background-color: red; */
     }
     #flyer-1 {
         display: initial;
@@ -245,7 +244,6 @@ h4.glossary {
 }
 @media only screen and (min-width: 375px) {
     body {
-        /* background-color: pink; */
     }
     #flyer-1 {
         display: initial;
@@ -256,7 +254,6 @@ h4.glossary {
 
 @media only screen and (min-width: 414px) {
     body {
-        /* background-color: orange; */
     }
     .flyer-one-img {
         position: relative;
@@ -272,7 +269,6 @@ h4.glossary {
 
 @media (min-width: 576px) {
     body {
-        /* background-color: blue; */
     }
     .home {
         margin-left: 0px;
@@ -282,7 +278,6 @@ h4.glossary {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        /* background-color: gold; */
     }
     .flyer-one-img {
         position: relative;

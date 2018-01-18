@@ -5,6 +5,7 @@ $(document).ready(function() {
     if (!isTouchable() && $(window).width() >= 768) {
         var IN_FLYER = false;
         var IN_IMAGE = false;
+        var TOGGLED = false;
         $('#flyer-1')
             .mouseenter(function(e) {
                 IN_FLYER = true;
@@ -15,7 +16,9 @@ $(document).ready(function() {
                 setTimeout(() => {
                     IN_FLYER = false;
                     if (!IN_FLYER && !IN_IMAGE) {
-                        $('#flyer-1').toggle();
+                        console.log('toggle 2');
+                        TOGGLED = true;
+                        $('#flyer-1').css('visibility', 'hidden');
                     }
                 }, 100);
             });
@@ -24,7 +27,12 @@ $(document).ready(function() {
             .mouseenter(function(e) {
                 IN_IMAGE = true;
                 if (!IN_FLYER) {
-                    $('#flyer-1').toggle();
+                    console.log('toggle 1');
+                    if (!TOGGLED) {
+                        $('#flyer-1').toggle();
+                    } else {
+                        $('#flyer-1').css('visibility', 'visible');
+                    }
                 }
                 console.log('enter image');
             })
@@ -35,7 +43,11 @@ $(document).ready(function() {
                 IN_IMAGE = false;
                 setTimeout(() => {
                     if (!IN_FLYER && !IN_IMAGE) {
-                        $('#flyer-1').toggle();
+                        if (!TOGGLED) {
+                            $('#flyer-1').toggle();
+                        } else {
+                            $('#flyer-1').css('visibility', 'hidden');
+                        }
                     }
                 }, 100);
 
