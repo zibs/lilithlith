@@ -234,26 +234,53 @@ h4.glossary {
 /* // Small devices (landscape phones, 576px and up) */
 
 @media only screen and (min-width: 320px) {
-    body {
-    }
     #flyer-1 {
         display: initial;
         position: relative;
         top: 0px;
+    }
+    .home {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .about {
+        margin-bottom: 25px;
+    }
+    .flyer-one-img {
+        position: relative;
+        bottom: 0px;
+        right: -15px;
     }
 }
 @media only screen and (min-width: 375px) {
-    body {
+    .home {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .about {
+        margin-bottom: 25px;
     }
     #flyer-1 {
         display: initial;
         position: relative;
         top: 0px;
+    }
+    .flyer-one-img {
+        position: relative;
+        bottom: 0px;
+        right: -15px;
     }
 }
 
 @media only screen and (min-width: 414px) {
     body {
+    }
+    .home {
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .about {
+        margin-bottom: 25px;
     }
     .flyer-one-img {
         position: relative;
@@ -275,8 +302,28 @@ h4.glossary {
     }
 }
 
-/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    body {
+    }
+    .flyer-one-img {
+        position: relative;
+        bottom: 100px;
+        right: -15px;
+    }
+    .home {
+        margin-left: 15px;
+    }
+
+    .flyer-one-img {
+        position: relative;
+        bottom: 50px;
+        right: -15px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) {
     body {
     }
     .flyer-one-img {
