@@ -120,8 +120,6 @@ textarea {
     font-family: 'doulos';
     src: url('../fonts/DoulosSIL-R.eot');
     src: url('../fonts/DoulosSIL-R.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DoulosSIL-R.woff') format('woff'),
-        url('../fonts/DoulosSIL-R.woff2') format('woff2'),
         url('../fonts/DoulosSIL-R.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -137,6 +135,15 @@ body {
     padding-top: 35px;
     font-family: 'kings-caslon-display', serif;
 }
+a.link {
+    color: #ad5527;
+}
+a.link:hover {
+    text-decoration: none;
+}
+h6.no-margin {
+    margin-left: 0px;
+}
 ul {
     padding-left: 15px;
     margin-bottom: 10px;
@@ -147,17 +154,35 @@ h6 {
 li {
     font-size: 14px;
 }
+.mg-btm-lrg {
+    padding-bottom: 150px;
+}
+.ascii {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
 
-.home {
-    margin-left: 15px;
+.about-text {
+    line-height: 22px;
+    margin-bottom: 0rem;
     font-family: 'raisonne-demibold', sans-serif;
 }
+.home {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: 'raisonne-demibold', sans-serif;
+}
+.about-link {
+    font-family: 'kings-caslon-display', serif;
+    margin-bottom: 25px;
+}
+
 .container-fluid {
     position: relative;
 }
 .flyer-one-img {
     position: relative;
-    bottom: 150px;
+    /* bottom: 150px; */
     right: -15px;
 }
 .padding-r-xs {
@@ -238,12 +263,37 @@ h4.glossary {
 #flyer-1 {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 150px;
     background-color: #fef9f1;
 }
 
 .ipa {
     font-family: 'doulos';
+}
+
+.wfwrap {
+    /* position: relative;  */
+    /* display: inline-block; */
+}
+#waveform {
+    position: absolute;
+    top: -35px;
+    left: 140px;
+    right: 0px;
+}
+
+.controls {
+    /* display: none;
+    position: fixed;
+    bottom: 38px; */
+
+    margin-left: 10px;
+}
+
+.controls > i {
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -256,21 +306,37 @@ h4.glossary {
     }
     .home {
         margin-left: 0px;
-        margin-bottom: 25px;
+        margin-bottom: 5px;
+    }
+    .about-link {
+        margin-left: 0px;
     }
     .about {
         margin-bottom: 25px;
     }
     .flyer-one-img {
         position: relative;
-        bottom: 0px;
+        top: 50px;
         right: -15px;
+    }
+    .controls {
+        margin-left: 0px;
+    }
+
+    #flyer-1 {
+        display: initial;
+        position: relative;
+        top: 75px;
     }
 }
 @media only screen and (min-width: 375px) {
     .home {
         margin-left: 0px;
-        margin-bottom: 25px;
+
+        margin-bottom: 5px;
+    }
+    .about-link {
+        margin-left: 0px;
     }
     .about {
         margin-bottom: 25px;
@@ -278,11 +344,11 @@ h4.glossary {
     #flyer-1 {
         display: initial;
         position: relative;
-        top: 0px;
+        top: 75px;
     }
     .flyer-one-img {
         position: relative;
-        bottom: 0px;
+        /* bottom: 0px; */
         right: -15px;
     }
 }
@@ -292,20 +358,26 @@ h4.glossary {
     }
     .home {
         margin-left: 0px;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
+        margin-bottom: 5px;
+    }
+    .about-link {
+        margin-left: 0px;
     }
     .about {
         margin-bottom: 25px;
     }
     .flyer-one-img {
         position: relative;
-        bottom: 0px;
         right: -15px;
     }
     #flyer-1 {
         display: initial;
         position: relative;
-        top: 0px;
+        top: 75px;
+    }
+    .controls {
+        margin-left: 0px;
     }
 }
 
@@ -314,25 +386,37 @@ h4.glossary {
     }
     .home {
         margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .about-link {
+        margin-left: 0px;
     }
 }
 
 @media (min-width: 768px) {
     body {
     }
-    .flyer-one-img {
-        position: relative;
-        bottom: 100px;
-        right: -15px;
-    }
+
     .home {
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    .about-link {
         margin-left: 15px;
     }
 
     .flyer-one-img {
         position: relative;
-        bottom: 50px;
+        top: 50px;
         right: -15px;
+    }
+    #flyer-1 {
+        display: initial;
+        position: relative;
+        top: 50px;
+    }
+    .controls {
+        margin-left: 10px;
     }
 }
 
@@ -342,24 +426,39 @@ h4.glossary {
     }
     .flyer-one-img {
         position: relative;
-        bottom: 100px;
+        /* bottom: 100px; */
+        top: 50px;
         right: -15px;
     }
     .home {
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+    .about-link {
         margin-left: 15px;
     }
 
     #flyer-1 {
         display: none;
         position: absolute;
-        top: 100px;
+        top: 150px;
         background-color: #fef9f1;
         width: 56.3% !important;
+    }
+
+    #waveform {
+        position: absolute;
+        top: -35px;
+        left: 140px;
+        right: 0px;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .controls {
+        margin-left: 10px;
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */

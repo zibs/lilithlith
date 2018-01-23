@@ -19,7 +19,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <!-- Place favicon.ico in the root directory -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.8/wavesurfer.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/sml3nre.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
@@ -31,41 +43,25 @@
 <body>
     <main class="container-fluid">
         <section class="row">
-            <section class="col-md-3 col-12">
-                <h6 class="home">lilithlithlithlithlith</h6>
+            <section class="col-md-12 col-12">
+                <h6 class="home">
+                    <a class="link" href="https://www.lilithlithlithlithlith.com/">lilithlithlithlithlith</a>
+                </h6>
+                <h6 class="about-link">
+                    <em>
+                        <a class="link" href="about.html">about</a>
+                    </em>
+                </h6>
+                <section class="controls">
+                    <i onclick="playOrPause('lilith1')" class="material-icons">play_arrow</i>
+                    <i onclick="pause()" class="material-icons">pause</i>
+                    <section class="wfwrap">
+                        <div id="waveform"></div>
+                    </section>
+                </section>
+                <script src="js/main.js"></script>
             </section>
-            <section class="col-md-3 col-12">
-                <h6 class="about">
-                    <em>A series of events to generate research on <br> what one might not hear</em>
-                </h6>
-            </section>
-            <section class="offset-md-1 col-md-5 col-12">
-                <h6>
-                    <em>lilithlith reviews:</em>
-                </h6>
-                <ul>
-                    <li>power infrastructures</li>
-                    <li>histories and local sites of energy (architectures / power lines / delivery modes / wires / switches
-                        / generators / transmitters)
-                    </li>
-                </ul>
-                <h6>
-                    <em> lilithlith proposes:</em>
-                </h6>
-                <ul>
-                    <li>affective experiences</li>
-                    <li>lateral motions (side steps / sways / uncomfortable decisions)</li>
-                    <li>practicing collective listening</li>
-                </ul>
-                <h6>
-                    <em>lilithlithlithlith desires:</em>
-                </h6>
-                <ul>
-                    <li>to reveal energy transgressing spaces and bodies</li>
-                    <li>to access invisible boundaries</li>
-                    <li>to absorb and amplify ++-+*~</li>
-                </ul>
-            </section>
+
         </section>
         <section class="row">
             <section class="col-12">
@@ -92,9 +88,13 @@
 
                     <section class="row bottom-mg">
                         <section class="col-6">
-                            <p class="indent"><span class="caslon">v.,</span></p>
+                            <p class="indent">
+                                <span class="caslon">v.,</span>
+                            </p>
                             <p class="indent">To utter a low inarticulate vocal sound in expression of dissent or dissatisfaction.</p>
-                            <p class="indent"><span class="caslon">n.,</span></p>
+                            <p class="indent">
+                                <span class="caslon">n.,</span>
+                            </p>
                             <p class="indent">unwanted
                                 <span class="x1-ls">low-frequency</span> variations in current or voltage which will give rise in a loudspeaker
                                 to a steady humming sound.</p>
@@ -117,9 +117,13 @@
                                 </div>
                             </div>
 
-                            <p class="indent"><span class="caslon">n.,</span></p>
+                            <p class="indent">
+                                <span class="caslon">n.,</span>
+                            </p>
                             <p class="indent">Construction that lies beneath, underground; not to be seen.</p>
-                            <p class="indent"><span class="caslon">n.,</span></p>
+                            <p class="indent">
+                                <span class="caslon">n.,</span>
+                            </p>
                             <p class="indent">A collective term for the subordinate parts of an undertaking.</p>
                         </section>
                     </section>
@@ -179,9 +183,13 @@
                                     <strong class="ipa">/ˈlɪs(ə)nɪŋ/</strong>
                                 </p>
                             </div>
-                            <p><span class="caslon">n.,</span></p>
+                            <p>
+                                <span class="caslon">n.,</span>
+                            </p>
                             <p class="small-btm">The action of the verb listen</p>
-                            <p><span class="caslon">adj.</span></p>
+                            <p>
+                                <span class="caslon">adj.</span>
+                            </p>
                             <p class="small-btm">That listens attentively </p>
                             <p>A question asked elsewhere but useful in this context: “To what extent is listening
                             </p>
@@ -217,18 +225,24 @@
                             <p class="small-btm">
                                 <strong class="ipa">/ˈhwɪs(ə)lə/</strong>
                             </p>
-                            <p class="x2-indent"><span class="caslon">n.,</span> A person,
+                            <p class="x2-indent">
+                                <span class="caslon">n.,</span> A person,
                                 <span class="caslon larger">
                                     <em> animal, or thing that whistles.</em>
                                 </span>
                             </p>
-                            <p class="x3-indent"><span class="caslon">n.,</span> A large species of marmot found in mountainous parts of North America known for its high-pitched
-                                warning issued to alert other members of the colony to possible danger.</p>
-                            <p class="x2-indent"><span class="caslon">n.,</span> An atmospheric heard as a whistle that falls in pitch, caused by radio waves generated by
-                                lightning and guided by the lines of force of the earth's magnetic field. Frequencies of
-                                terrestrial whistlers are 1 kHz to 30 kHz, with a maximum amplitude at 3 kHz to 5 kHz.</p>
-                            <p class="x2-indent"><span class="caslon">n.,</span>Sḵwiḵw, unceded Coast Salish territories of the S<u>k</u>w<u>x</u>wú7mesh and Líl̓wat First Nations.
-</p>
+                            <p class="x3-indent">
+                                <span class="caslon">n.,</span> A large species of marmot found in mountainous parts of North America known for
+                                its high-pitched warning issued to alert other members of the colony to possible danger.</p>
+                            <p class="x2-indent">
+                                <span class="caslon">n.,</span> An atmospheric heard as a whistle that falls in pitch, caused by radio waves generated
+                                by lightning and guided by the lines of force of the earth's magnetic field. Frequencies
+                                of terrestrial whistlers are 1 kHz to 30 kHz, with a maximum amplitude at 3 kHz to 5 kHz.</p>
+                            <p class="x2-indent">
+                                <span class="caslon">n.,</span>Sḵwiḵw, unceded Coast Salish territories of the S
+                                <u>k</u>w
+                                <u>x</u>wú7mesh and Líl̓wat First Nations.
+                            </p>
                         </section>
                     </section>
 
@@ -243,23 +257,9 @@
 
     <!-- Add your site or application content here -->
 
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
