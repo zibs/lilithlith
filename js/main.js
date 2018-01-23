@@ -102301,12 +102301,12 @@ function pause() {
     IS_PLAYING = false;
 }
 
-// function stop() {
-//     $('.controls').fadeToggle();
-//     $('#waveform').fadeTo('500', 0);
-//     CONTROLS_VISIBLE = false;
-//     WAVEFORM_VISIBLE = false;
-//     IS_PLAYING = false;
-//     CURRENT_EPISODE = '';
-//     wavesurfer.stop();
-// }
+function stop() {
+    // $('.controls').fadeToggle();
+    $('#waveform').fadeTo('500', 0);
+
+    WAVEFORM_VISIBLE = false;
+    IS_PLAYING = false;
+    CURRENT_EPISODE = '';
+    wavesurfer.stop();
+}
