@@ -135,6 +135,9 @@ body {
     padding-top: 35px;
     font-family: 'kings-caslon-display', serif;
 }
+.strike {
+    text-decoration: line-through;
+}
 a.link {
     color: #ad5527;
 }
