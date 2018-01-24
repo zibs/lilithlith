@@ -135,14 +135,21 @@ body {
     padding-top: 35px;
     font-family: 'kings-caslon-display', serif;
 }
-.strike {
-    text-decoration: line-through;
+.about-page {
+    margin-left: 15px;
+}
+a.strike {
+    text-decoration: line-through !important;
 }
 a.link {
     color: #ad5527;
+    text-decoration: underline;
+}
+a.link.nolink {
+    text-decoration: none;
 }
 a.link:hover {
-    text-decoration: none;
+    color: #d7784c;
 }
 h6.no-margin {
     margin-left: 0px;
@@ -339,6 +346,9 @@ h4.glossary {
         right: 0px;
         width: 90%;
     }
+    .about-page {
+        margin-left: 0px;
+    }
 }
 @media only screen and (min-width: 375px) {
     .home {
@@ -408,6 +418,9 @@ h4.glossary {
     body {
     }
 
+    .about-page {
+        margin-left: 15px;
+    }
     .home {
         margin-left: 15px;
         margin-bottom: 5px;
