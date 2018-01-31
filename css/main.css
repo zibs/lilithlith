@@ -318,12 +318,15 @@ h4.glossary {
 
 a.event-link {
     color: #5e5f94;
+    position: relative;
     text-decoration: underline;
+    z-index: 1000;
 }
 a.event-link.nolink {
     text-decoration: none;
 }
 a.event-link:hover {
+    z-index: 1000;
     color: #5e5f94;
 }
 /* // Small devices (landscape phones, 576px and up) */
