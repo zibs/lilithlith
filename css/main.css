@@ -134,6 +134,7 @@ body {
     color: #ad5527;
     padding-top: 35px;
     font-family: 'kings-caslon-display', serif;
+    overflow-x: hidden;
 }
 .about-page {
     margin-left: 15px;
@@ -288,9 +289,9 @@ h4.glossary {
 }
 #waveform {
     position: absolute;
-    top: -35px;
     left: 140px;
     right: 0px;
+    top: -35px;
 }
 
 .controls {
@@ -311,19 +312,19 @@ h4.glossary {
 }
 .event-1 > p {
     font-size: 0.9em;
-    color: #5E5F94;
+    color: #5e5f94;
     font-family: 'kings-caslon-display', serif !important;
 }
 
 a.event-link {
-    color: #5E5F94;
+    color: #5e5f94;
     text-decoration: underline;
 }
 a.event-link.nolink {
     text-decoration: none;
 }
 a.event-link:hover {
-    color: #5E5F94;
+    color: #5e5f94;
 }
 /* // Small devices (landscape phones, 576px and up) */
 
@@ -472,7 +473,7 @@ a.event-link:hover {
         padding-left: 0px;
     }
     .txt {
-        margin-right: 15px;
+        margin-right: 5px;
     }
     .image-wrap {
         bottom: 100px;
