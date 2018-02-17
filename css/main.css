@@ -136,7 +136,7 @@ textarea {
 
 body {
     color: #ad5527;
-
+    background-color: var(--bg-color2);
     font-family: 'kings-caslon-display', serif;
     overflow-x: hidden;
 }
@@ -343,10 +343,25 @@ a.event-link:hover {
     background-color: var(--bg-color2);
 }
 
-a.link.fl2 {
+a.link.fl2, a.event-link.fl2 {
     color: var(--txt-color2);
 }
 
+.flyer-two-image {
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    bottom: 150px;
+}
+
+.flyer-two-image-mobile {
+    display: none;
+}
+
+p.fl2 {
+    color: var(--txt-color2);
+}
 @media only screen and (min-width: 320px) {
     #flyer-1 {
         display: initial;

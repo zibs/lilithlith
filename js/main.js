@@ -1,8 +1,24 @@
 var BOUND = false;
+var bg_1 = '#fef9f1';
+var bg_2 = '#b1bcd6';
+var scrolledPastFirstFlyer = false;
+
 $(document).ready(function() {
     if (BOUND) return;
     BOUND = true;
-    console.log('once');
+
+    $(window).scroll(function(event) {
+        var scrollOffset = $(window).scrollTop();
+        if (scrollOffset > $(window).height() && !scrolledPastFirstFlyer) {
+            $('body').css('background-color', bg_1);
+            scrolledPastFirstFlyer = true;
+            return;
+        } else if (scrollOffset < $(window).height() && scrolledPastFirstFlyer) {
+            $('body').css('background-color', bg_2);
+            scrolledPastFirstFlyer = false;
+        } 
+    });
+
     controlFlyerOne();
     function controlFlyerOne() {
         function isTouchable() {
@@ -23,8 +39,13 @@ $(document).ready(function() {
         }
     }
     $(window).resize(function() {
-        console.log('calling it?');
         controlFlyerOne();
+    });
+
+    var IMAGE_INDEX = 2;
+    $('.flyer-two-image').click(function() {
+        IMAGE_INDEX = IMAGE_INDEX === 2 ? 1 : 2;
+        $(this).attr('src', 'img/lf' + IMAGE_INDEX + '.png');
     });
 });
 
