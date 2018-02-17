@@ -6,6 +6,11 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+:root {
+    --bg-color1: #fef9f1;
+    --bg-color2: #b1bcd6;
+    --txt-color2: #3d509c;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -130,9 +135,8 @@ textarea {
    ========================================================================== */
 
 body {
-    background-color: #fef9f1;
     color: #ad5527;
-    padding-top: 35px;
+
     font-family: 'kings-caslon-display', serif;
     overflow-x: hidden;
 }
@@ -330,6 +334,18 @@ a.event-link:hover {
     color: #5e5f94;
 }
 /* // Small devices (landscape phones, 576px and up) */
+.flyer-1 {
+    padding-top: 35px;
+    background-color: var(--bg-color1);
+}
+.flyer-2 {
+    padding-top: 35px;
+    background-color: var(--bg-color2);
+}
+
+a.link.fl2 {
+    color: var(--txt-color2);
+}
 
 @media only screen and (min-width: 320px) {
     #flyer-1 {
@@ -367,7 +383,7 @@ a.event-link:hover {
         top: -35px;
         left: 75px;
         right: 0px;
-        width: 90%;
+        /* width: 90%; */
     }
     .about-page {
         margin-left: 0px;
