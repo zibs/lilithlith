@@ -5,61 +5,21 @@ $(document).ready(function() {
     console.log('once');
     controlFlyerOne();
     function controlFlyerOne() {
-        console.log('running');
         function isTouchable() {
             return 'ontouchstart' in window || 'onmsgesturechange' in window; // works on most browsers // works on ie10
         }
-        console.log(
-            '(!isTouchable() && $(window).width() > 768)',
-            !isTouchable() && $(window).width() > 768
-        );
+
         if (!isTouchable() && $(window).width() > 768) {
-            console.log('in function');
             var IN_FLYER = false;
             var IN_IMAGE = false;
             var TOGGLED = false;
-            $('#flyer-1')
-                .mouseenter(function(e) {
-                    console.log('he>>>>>>>.');
-                    IN_FLYER = true;
-                })
-                .mouseleave(function(e) {
-                    setTimeout(() => {
-                        IN_FLYER = false;
-                        if (!IN_FLYER && !IN_IMAGE) {
-                            TOGGLED = true;
-                            $('#flyer-1').css('visibility', 'hidden');
-                        }
-                    }, 100);
-                });
+            $('#flyer-1').click(function(e) {
+                $('#flyer-1').toggle();
+            });
 
-            $('.flyer-one-img')
-                .mouseenter(function(e) {
-                    console.log('wtf');
-                    IN_IMAGE = true;
-                    if (!IN_FLYER) {
-                        if (!TOGGLED) {
-                            $('#flyer-1').toggle();
-                        } else {
-                            $('#flyer-1').css('visibility', 'visible');
-                        }
-                    }
-                })
-                .mouseleave(function(e) {
-                    if (IN_FLYER) {
-                        return;
-                    }
-                    IN_IMAGE = false;
-                    setTimeout(() => {
-                        if (!IN_FLYER && !IN_IMAGE) {
-                            if (!TOGGLED) {
-                                $('#flyer-1').toggle();
-                            } else {
-                                $('#flyer-1').css('visibility', 'hidden');
-                            }
-                        }
-                    }, 100);
-                });
+            $('.flyer-one-img').click(function() {
+                $('#flyer-1').toggle();
+            });
         }
     }
     $(window).resize(function() {
