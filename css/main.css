@@ -141,7 +141,11 @@ body {
     overflow-x: hidden;
 }
 .about-page {
+    padding-top: 35px;
     margin-left: 15px;
+}
+.about-wrap {
+    background-color: var(--bg-color1);
 }
 a.strike {
     text-decoration: line-through !important;
@@ -197,6 +201,7 @@ li {
     position: relative;
 }
 .flyer-one-img {
+    cursor: pointer;
     position: relative;
     /* bottom: 150px; */
     right: -15px;
@@ -280,6 +285,7 @@ h4.glossary {
     display: none;
     position: absolute;
     top: 150px;
+    cursor: pointer;
     background-color: #fef9f1;
 }
 
@@ -343,11 +349,13 @@ a.event-link:hover {
     background-color: var(--bg-color2);
 }
 
-a.link.fl2, a.event-link.fl2 {
+a.link.fl2,
+a.event-link.fl2 {
     color: var(--txt-color2);
 }
 
 .flyer-two-image {
+    cursor: pointer;
     height: 100vh;
     margin: 0 auto;
     position: relative;
@@ -357,12 +365,25 @@ a.link.fl2, a.event-link.fl2 {
 
 .flyer-two-image-mobile {
     display: none;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
 }
 
 p.fl2 {
     color: var(--txt-color2);
 }
+
 @media only screen and (min-width: 320px) {
+    .flyer-two-image-mobile {
+        display: initial;
+    }
+
+    .flyer-two-image {
+        bottom: 0px;
+    }
+
     #flyer-1 {
         display: initial;
         position: relative;
@@ -405,6 +426,13 @@ p.fl2 {
     }
 }
 @media only screen and (min-width: 375px) {
+    .flyer-two-image-mobile {
+        display: initial;
+    }
+
+    .flyer-two-image {
+        bottom: 50px;
+    }
     .home {
         margin-left: 0px;
 
@@ -430,6 +458,14 @@ p.fl2 {
 
 @media only screen and (min-width: 414px) {
     body {
+    }
+
+    .flyer-two-image-mobile {
+        display: initial;
+    }
+
+    .flyer-two-image {
+        bottom: 50px;
     }
     .home {
         margin-left: 0px;
@@ -500,6 +536,13 @@ p.fl2 {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 769px) {
+    .flyer-two-image-mobile {
+        display: none;
+    }
+
+    .flyer-two-image {
+        bottom: 150px;
+    }
     body {
         position: relative;
     }
