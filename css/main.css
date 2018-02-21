@@ -145,7 +145,7 @@ body {
     margin-left: 15px;
 }
 .about-wrap {
-    background-color: var(--bg-color1);
+    background-color: var(--bg-color2);
 }
 a.strike {
     text-decoration: line-through !important;
@@ -322,12 +322,12 @@ h4.glossary {
 }
 .event-1 > p {
     font-size: 0.9em;
-    color: #5e5f94;
+    color: #ad5527;
     font-family: 'kings-caslon-display', serif !important;
 }
 
 a.event-link {
-    color: #5e5f94;
+    color: #d7784c;
     position: relative;
     text-decoration: underline;
     z-index: 1000;
@@ -337,7 +337,7 @@ a.event-link.nolink {
 }
 a.event-link:hover {
     z-index: 1000;
-    color: #5e5f94;
+    color: #d7784c;
 }
 /* // Small devices (landscape phones, 576px and up) */
 .flyer-1 {
@@ -572,7 +572,7 @@ p.fl2 {
     #flyer-1 {
         display: none;
         position: absolute;
-        top: 125px;
+        top: 135px;
         background-color: #fef9f1;
         width: 56.3% !important;
     }
