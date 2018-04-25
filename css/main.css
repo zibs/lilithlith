@@ -375,6 +375,10 @@ p.fl2 {
     color: var(--txt-color2);
 }
 
+.project-doc-wrap {
+    margin-bottom: 100px;
+}
+
 @media only screen and (min-width: 320px) {
     .flyer-two-image-mobile {
         display: initial;
@@ -772,3 +776,4 @@ p.fl2 {
         page-break-after: avoid;
     }
 }
+
