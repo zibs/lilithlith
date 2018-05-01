@@ -304,12 +304,20 @@ h4.glossary {
     top: -35px;
 }
 
+#waveform-docu {
+    /* position: absolute; */
+    left: 0px;
+    right: 0px;
+}
+
 .controls {
     /* display: none;
     position: fixed;
     bottom: 38px; */
 
     margin-left: 10px;
+}
+.controls-docu {
 }
 
 .controls > i {
@@ -377,6 +385,15 @@ p.fl2 {
 
 .project-doc-wrap {
     margin-bottom: 100px;
+}
+
+/* documentation */
+.top {
+    padding-top: 35px;
+}
+
+.documetation-text {
+    color: var(--txt-color2);
 }
 
 @media only screen and (min-width: 320px) {
@@ -776,4 +793,3 @@ p.fl2 {
         page-break-after: avoid;
     }
 }
-
