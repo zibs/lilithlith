@@ -388,6 +388,9 @@ p.fl2 {
 }
 
 /* documentation */
+.docu {
+    background-color: var(--bg-color1);
+}
 .top {
     padding-top: 35px;
 }
@@ -395,7 +398,9 @@ p.fl2 {
 .documetation-text {
     color: var(--txt-color2);
 }
-
+.credits {
+    font-size: 14px;
+}
 @media only screen and (min-width: 320px) {
     .flyer-two-image-mobile {
         display: initial;
