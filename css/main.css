@@ -400,6 +400,7 @@ p.fl2 {
 }
 .credits {
     font-size: 14px;
+    color: var(--txt-color2);
 }
 @media only screen and (min-width: 320px) {
     .flyer-two-image-mobile {
