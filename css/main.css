@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
+/*  */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -9,7 +9,9 @@
 :root {
     --bg-color1: #fef9f1;
     --bg-color2: #b1bcd6;
+    --bg-color3: #072734;
     --txt-color2: #3d509c;
+    --txt-color3: #ac404c;
 }
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -139,6 +141,9 @@ body {
     background-color: var(--bg-color2);
     font-family: 'kings-caslon-display', serif;
     overflow-x: hidden;
+}
+.arial {
+    font-family: Arial, Helvetica, sans-serif
 }
 .about-page {
     padding-top: 35px;
@@ -356,10 +361,36 @@ a.event-link:hover {
     padding-top: 35px;
     background-color: var(--bg-color2);
 }
-
+.flyer-3 {
+    padding-top: 35px;
+    background-color: var(--bg-color3);
+}
+.flyer-3 p a {
+    color: var(--txt-color3);
+}
 a.link.fl2,
 a.event-link.fl2 {
     color: var(--txt-color2);
+    text-decoration: underline;
+}
+a.link.fl3,
+a.event-link.fl3 {
+    color: var(--txt-color3);
+    text-decoration: underline;
+}
+.info-row {
+    position: relative;
+    z-index: 5;
+}
+
+.flyer-three-image {
+    cursor: pointer;
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+    object-fit: cover;
+    bottom: 100px;
 }
 
 .flyer-two-image {
@@ -381,6 +412,9 @@ a.event-link.fl2 {
 
 p.fl2 {
     color: var(--txt-color2);
+}
+p.fl3 {
+    color: var(--txt-color3);
 }
 
 .project-doc-wrap {
@@ -405,6 +439,9 @@ p.fl2 {
 
 .img-wrap {
     margin-bottom: 20px;
+}
+.costume-img {
+    height: 280px;
 }
 @media only screen and (min-width: 320px) {
     .flyer-two-image-mobile {
@@ -454,6 +491,10 @@ p.fl2 {
     }
     .about-page {
         margin-left: 0px;
+    }
+    .flyer-three-image {
+        object-fit: contain;
+        width: 100vw;
     }
 }
 @media only screen and (min-width: 375px) {
@@ -569,6 +610,10 @@ p.fl2 {
     }
     .controls {
         margin-left: 10px;
+    }
+    .flyer-three-image {
+        object-fit: cover;
+        width: 100vw;
     }
 }
 
