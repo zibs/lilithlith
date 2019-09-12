@@ -177,6 +177,9 @@ ul {
 h6 {
     margin-bottom: 0px;
 }
+h6.about {
+    line-height: 1.5;
+}
 
 .mg-btm-lrg {
     padding-bottom: 150px;
